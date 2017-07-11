@@ -15,7 +15,7 @@ export class LogsComponent {
   }
 
   getColor(log) {
-    return this.isGreaterThanFourth(log) ? 'blue' : 'white';
+    return this.isGreaterThanFourth(log) ? 'blue' : 'transparent';
   }
 
   isGreaterThanFourth(log) {
