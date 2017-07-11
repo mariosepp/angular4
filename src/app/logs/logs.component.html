@@ -1,0 +1,5 @@
+<button
+  class="btn btn-primary"
+  (click)="onDisplayDetails()">Display details</button>
+<p *ngIf="showSecret">This is a secret!</p>
+<p *ngFor="let log of logs" [ngStyle]="{backgroundColor: getColor(log)}" [ngClass]="{whiteFont: isGreaterThanFourth(log)}">{{ log }}</p>
